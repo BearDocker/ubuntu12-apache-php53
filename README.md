@@ -12,16 +12,15 @@ Usage
 ------
 
 ```
-$ docker run -d -P bylexus/apache-php53
+$ docker run -d -P imagine10255/ubuntu12-apache-php53
 ```
 
 With all the options:
 
 ```bash
 $ docker run -d -p 8080:80 \
-    -v /home/user/webroot:/var/www \
-    -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT' \
-    ubuntu12-apache-php53
+    -v /home/website/{your-site}:/var/www \
+    imagine10255/ubuntu12-apache-php53
 ```
 
 * `-v [local path]:/var/www` maps the container's webroot to a local path
