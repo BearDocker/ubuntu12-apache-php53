@@ -21,7 +21,7 @@ With all the options:
 $ docker run -d -p 8080:80 \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT' \
-    bylexus/apache-php53
+    ubuntu12-apache-php53
 ```
 
 * `-v [local path]:/var/www` maps the container's webroot to a local path
@@ -54,3 +54,6 @@ Configurations
 * php.ini:
   * display_errors = On
   * error_reporting = E_ALL & ~E_DEPRECATED & ~E_NOTICE (default, overridable per env variable)
+
+
+Docker File 參考來源 bylexus/apache-php53
